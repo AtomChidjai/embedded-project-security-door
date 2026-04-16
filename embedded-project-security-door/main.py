@@ -5,6 +5,9 @@ entered_password = ""
 
 try:
     while True:
+        if entered_password = "":
+            output.update_lcd("Enter Password")
+
         key = input.read_keypad()
 
         if key:
@@ -19,16 +22,21 @@ try:
 
                     if reply == "yes":
                         input.access_granted()
+                        output.update_lcd("Access Granted!")
                         input.open_door()
                     else:
                         input.access_denied()
+                        output.update_lcd("Access Denied!")
                 else:
                     input.access_denied()
+                    output.update_lcd("Incorrect", "Password...")
+                    time.sleep(2)
 
                 entered_password = ""
 
             else:
                 entered_password += key
+                output.update_lcd("Enter Password", key)
 
         # sensor auto close
         if input.sensor_triggered():
