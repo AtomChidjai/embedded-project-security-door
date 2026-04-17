@@ -1,0 +1,24 @@
+[2026-04-17 23:01:05] EVENT: ========== System boot ==========
+[2026-04-17 23:01:05] STATE: -> LOCKED | System started
+[2026-04-17 23:01:27] EVENT: Correct password entered
+[2026-04-17 23:02:49] EVENT: ========== System boot ==========
+[2026-04-17 23:02:49] STATE: -> LOCKED | System started
+[2026-04-17 23:03:04] EVENT: Correct password entered
+[2026-04-17 23:03:06] STATE: -> PENDING_APPROVAL | Correct password, waiting for Telegram
+[2026-04-17 23:03:36] EVENT: Telegram approval timed out
+[2026-04-17 23:03:39] STATE: -> LOCKED | Approval timed out
+[2026-04-17 23:03:46] EVENT: System shutdown (Ctrl+C)
+[2026-04-17 23:05:25] EVENT: ========== System boot ==========
+[2026-04-17 23:05:25] STATE: -> LOCKED | System started
+[2026-04-17 23:05:38] EVENT: Correct password entered
+[2026-04-17 23:05:40] STATE: -> PENDING_APPROVAL | Correct password, waiting for Telegram
+[2026-04-17 23:05:49] EVENT: System shutdown (Ctrl+C)
+[2026-04-17 23:07:11] EVENT: ========== System boot ==========
+[2026-04-17 23:07:11] STATE: -> LOCKED | System started
+[2026-04-17 23:07:24] EVENT: Correct password entered
+[2026-04-17 23:07:26] STATE: -> PENDING_APPROVAL | Correct password, waiting for Telegram
+[2026-04-17 23:07:29] EVENT: Telegram approved entry
+[2026-04-17 23:07:30] STATE: -> OPEN | Door opened for incoming person
+[2026-04-17 23:07:33] EVENT: Sensor detected person entered, closing door
+[2026-04-17 23:07:34] STATE: -> LOCKED | Person entered, door closed
+[2026-04-17 23:07:45] EVENT: System shutdown (Ctrl+C)
