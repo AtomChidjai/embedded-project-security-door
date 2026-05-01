@@ -112,3 +112,4 @@ class lcd:
     def lcd_clear(self):
         self.lcd_write(LCD_CLEARDISPLAY)
         self.lcd_write(LCD_RETURNHOME)
+        sleep(0.002)  # HD44780 clear command needs ~1.52ms to complete

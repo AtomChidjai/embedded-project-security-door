@@ -125,6 +125,7 @@ def handle_locked_sensor():
         input.access_granted()
         input.open_door()
         display.show("Exit detected", "Door opening..")
+        time.sleep(2)  # Show "Exit detected" long enough before transitioning
         sm.transition_to(sm.OPEN_EXIT, "Door opened for exit")
         set_cooldown(2)
 
@@ -142,6 +143,7 @@ def handle_open_exit():
         display.show("Person exited", "Closing door..")
         input.close_door()
         input.access_denied()  # Reset LEDs
+        time.sleep(2)  # Wait so display shows until door fully closes
         sm.transition_to(sm.LOCKED, "Person exited, door closed")
         set_cooldown(2)
         return
